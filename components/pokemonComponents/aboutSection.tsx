@@ -18,7 +18,7 @@ export const AboutSection = ({ onBack }: { onBack: () => void }) => {
       <div className="about-content">
         <div className="profile-card">
           <div className="profile-image">
-            <Image src="/pfp.jpg" alt="Profile" width={300} height={300} className="rounded-full" />
+            <Image src="" alt="Profile" width={300} height={300} className="rounded-full" />
             <div className="profile-level">Lv. 28 Developer</div>
           </div>
 
