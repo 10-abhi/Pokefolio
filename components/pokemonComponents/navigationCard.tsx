@@ -1,7 +1,3 @@
-"use client"
-
-import type React from "react"
-
 import { motion } from "framer-motion"
 import Image from "next/image"
 
@@ -12,10 +8,10 @@ interface NavCardProps {
   description: string
   onClick: () => void
   delay: number
-  imageUrl?: string
+  image: string
 }
 
-export const NavCard = ({ title, type, icon, description, onClick, delay, imageUrl }: NavCardProps) => {
+export const NavCard = ({ title, type, icon, onClick, delay, image }: NavCardProps) => {
   return (
     <motion.div
       className={`nav-card ${type}`}
@@ -29,24 +25,12 @@ export const NavCard = ({ title, type, icon, description, onClick, delay, imageU
       }}
     >
       <div className="card-content">
-        {imageUrl && (
-          <div className="card-image-container">
-            <Image
-              src={imageUrl || "/placeholder.svg"}
-              alt={title}
-              width={80}
-              height={80}
-              className="card-pokemon-image"
-            />
-          </div>
-        )}
         <div className="card-header">
           <h3>{title}</h3>
           <div className="card-icon">{icon}</div>
         </div>
-        <p>{description}</p>
         <div className="card-decoration">
-          <div className="card-circle"></div>
+          <Image className="card-circle" src={image} alt={title} width={100} height={100}></Image>
         </div>
         <div className="card-footer">
           <span>Select</span>
