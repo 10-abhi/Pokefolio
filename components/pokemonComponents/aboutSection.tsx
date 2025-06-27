@@ -1,9 +1,5 @@
-"use client"
-
 import { ArrowLeft } from "lucide-react"
 import Image from "next/image"
-import { GitHubContributions } from "../githubComps/github-contributions"
-
 export const AboutSection = ({ onBack }: { onBack: () => void }) => {
   return (
     <div className="section about-section">
@@ -18,7 +14,7 @@ export const AboutSection = ({ onBack }: { onBack: () => void }) => {
       <div className="about-content">
         <div className="profile-card">
           <div className="profile-image">
-            <Image src="" alt="Profile" width={300} height={300} className="rounded-full" />
+            <Image src="/avatar.jpeg" alt="Profile" width={300} height={300} className="rounded-full" />
             <div className="profile-level">Lv. 28 Developer</div>
           </div>
 
@@ -60,9 +56,9 @@ export const AboutSection = ({ onBack }: { onBack: () => void }) => {
 
           <div className="journey-text">
             <p>
-              I&apos;m on an epic quest to become a Master Developer, just like a Pokémon trainer striving to be the
-              very best. My journey began in the world of HTML and CSS, capturing my first coding abilities before
-              evolving my skills through JavaScript and beyond.
+              I&apos;m on an epic quest to become a Master Developer, just like a Pokémon trainer striving to be the very
+              best. My journey began in the world of HTML and CSS, capturing my first coding abilities before evolving
+              my skills through JavaScript and beyond.
             </p>
 
             <p>
@@ -76,6 +72,7 @@ export const AboutSection = ({ onBack }: { onBack: () => void }) => {
               create the perfect solution for each project&apos;s unique requirements.
             </p>
           </div>
+
 
           <div className="trainer-stats">
             <h4>Trainer Stats</h4>
@@ -96,10 +93,6 @@ export const AboutSection = ({ onBack }: { onBack: () => void }) => {
                 <p className="stat-value">15+</p>
               </div>
             </div>
-          </div>
-
-          <div className="github-contributions-wrapper w-full overflow-hidden mt-6">
-            <GitHubContributions username="10-abhi" className="w-full" />
           </div>
         </div>
       </div>

@@ -16,9 +16,8 @@ export const SkillsSection = ({ onBack }: { onBack: () => void }) => {
       </div>
 
       <div className="skills-content">
-        
-        <div className="github-tech-wrapper w-full overflow-hidden mb-6">
-          <GitHubTechStack username="10-abhi" className="w-full" />
+        <div className="github-tech-wrapper">
+          <GitHubTechStack username="10-abhi" />
         </div>
 
         <div className="skills-grid">
