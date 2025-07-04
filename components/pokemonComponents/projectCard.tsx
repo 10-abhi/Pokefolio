@@ -24,7 +24,7 @@ export const ProjectCard = ({
   return (
     <div className="project-card">
       <div className="project-image">
-        <Image src={image as string} alt={title} width={350} height={200}></Image>
+        <Image src={image as string} alt={""} width={350} height={200}></Image>
         <div className="project-types">
           {types.map((type) => (
             <span key={type} className={`type ${type}`}>
