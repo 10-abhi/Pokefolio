@@ -1,6 +1,6 @@
-import { ArrowLeft , Github , ExternalLink } from "lucide-react"
+import { ArrowLeft  } from "lucide-react"
 import { ProjectCard } from "./projectCard"
-import Image from "next/image"
+
 export const ProjectsSection = ({ onBack }: { onBack: () => void }) => {
     return (
       <div className="section projects-section">
@@ -16,29 +16,37 @@ export const ProjectsSection = ({ onBack }: { onBack: () => void }) => {
           <ProjectCard
             title="PayHub"
             description="A Payment System which helps in p2p and bank to bank transactions"
-            image="/placeholder.svg?height=200&width=350"
+            image="/payhub.png"
             types={["fire", "electric"]}
-            techStack={["Next.js", "TypeScript","Express.js","Node.js","Turborepo","Tailwind CSS" , "Postgres"]}
+            techStack={["Next.js", "TypeScript","Express.js","Node.js","Turborepo","Tailwind CSS" , "Postgres" , "React"]}
             githubUrl="https://github.com/10-abhi/PayHub"
             demoUrl="https://pay-hub-user-app.vercel.app/"
           />
           <ProjectCard
             title="ScribVerse"
-            description="A Blog web-app where user can write their blog and share it with others"
-            image="/placeholder.svg?height=200&width=350"
+            description="An Blog web-app where user can write their blog and share it with others currently intergating AI features where user will not have to write blogs manually"
+            image="/scrib.png"
             types={["dragon", "fairy"]}
-            techStack={["React.js", "Express.js", "MongoDB", "TypeScript"]}
+            techStack={["React.js", "MongoDB", "TypeScript", "Honojs","Cloudflare"]}
             githubUrl="https://github.com/10-abhi/ScribVerse"
+            demoUrl="https://scrib-verse.vercel.app/"
+          />
+          <ProjectCard
+            title="Realtime-ws-notifier"
+            description="A lightweight WebSocket server using Redis Pub/Sub to deliver real-time events to connected users, based on their userId"
+            image="/placeholder.svg?height=300&width=500"
+            types={["dragon", "fairy"]}
+            techStack={["Websocket", "Node.js", "Redis(Pubs/Subs)", "TypeScript"]}
+            githubUrl="https://github.com/10-abhi/realtime-ws-notifier"
             // demoUrl="https://demo.com"
           />
         </div>
   
-        <div className="featured-project">
+        {/* <div className="featured-project">
           <h3>Featured Project</h3>
   
           <div className="PayHub">
             <div className="featured-image">
-              {/* <img src="/placeholder.svg?height=300&width=500" alt="Featured Project" /> */}
               <Image src="/placeholder.svg?height=300&width=500" alt="Featured Project" width={500} height={300}></Image>
               <div className="featured-types">
                 <span className="type fire">Fire</span>
@@ -76,7 +84,7 @@ export const ProjectsSection = ({ onBack }: { onBack: () => void }) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     )
   }
