@@ -574,28 +574,28 @@ body {
 }
 
 .type-circle.grass {
-  background: linear-gradient(to bottom, rgb(var(--grass-rgb)) 48%, #0d3f11 2%, #0d3f11 2%, #ffffff 98%);
-  /* background: radial-gradient(circle, rgb(var(--grass-rgb)) 0%, rgba(var(--grass-rgb), 0.5) 100%); */
+  /* background: linear-gradient(to bottom, rgb(var(--grass-rgb)) 48%, #0d3f11 2%, #0d3f11 2%, #ffffff 98%); */
+  background: radial-gradient(circle, rgb(var(--grass-rgb)) 0%, rgba(var(--grass-rgb), 0.5) 100%);
 }
 
 .type-circle.fire {
-  background: linear-gradient(to bottom, rgb(var(--fire-rgb)) 48%, #0d3f11 2%, #0d3f11 2%, #ffffff 98%);
-  /* background: radial-gradient(circle, rgb(var(--fire-rgb)) 0%, rgba(var(--fire-rgb), 0.5) 100%); */
+  /* background: linear-gradient(to bottom, rgb(var(--fire-rgb)) 48%, #0d3f11 2%, #0d3f11 2%, #ffffff 98%); */
+  background: radial-gradient(circle, rgb(var(--fire-rgb)) 0%, rgba(var(--fire-rgb), 0.5) 100%);
 }
 
 .type-circle.water {
-  background: linear-gradient(to bottom, rgb(var(--water-rgb)) 48%, #0d3f11 2%, #0d3f11 2%, #ffffff 98%);
-  /* background: radial-gradient(circle, rgb(var(--water-rgb)) 0%, rgba(var(--water-rgb), 0.5) 100%); */
+  /* background: linear-gradient(to bottom, rgb(var(--water-rgb)) 48%, #0d3f11 2%, #0d3f11 2%, #ffffff 98%); */
+  background: radial-gradient(circle, rgb(var(--water-rgb)) 0%, rgba(var(--water-rgb), 0.5) 100%);
 }
 
 .type-circle.electric {
-  background: linear-gradient(to bottom, rgb(var(--electric-rgb)) 48%, #0d3f11 2%, #0d3f11 2%, #ffffff 98%);
-  /* background: radial-gradient(circle, rgb(var(--electric-rgb)) 0%, rgba(var(--electric-rgb), 0.5) 100%); */
+  /* background: linear-gradient(to bottom, rgb(var(--electric-rgb)) 48%, #0d3f11 2%, #0d3f11 2%, #ffffff 98%); */
+  background: radial-gradient(circle, rgb(var(--electric-rgb)) 0%, rgba(var(--electric-rgb), 0.5) 100%);
 }
 
 .type-circle.psychic {
-  background: linear-gradient(to bottom, rgb(var(--psychic-rgb)) 48%, #0d3f11 2%, #0d3f11 2%, #ffffff 98%);
-  /* background: radial-gradient(circle, rgb(var(--psychic-rgb)) 0%, rgba(var(--psychic-rgb), 0.5) 100%); */
+  /* background: linear-gradient(to bottom, rgb(var(--psychic-rgb)) 48%, #0d3f11 2%, #0d3f11 2%, #ffffff 98%); */
+  background: radial-gradient(circle, rgb(var(--psychic-rgb)) 0%, rgba(var(--psychic-rgb), 0.5) 100%);
 }
 
 .portfolio-footer p {
